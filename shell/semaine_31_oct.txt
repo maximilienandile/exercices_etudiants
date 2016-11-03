@@ -1,0 +1,51 @@
+I. Les tableaux en HTML
+
+1. Créer un tableau en HTML avec les caractéristiques suivantes :
+- 3 colonnes
+- 10 lignes
+- Intitulé des 3 colonnes : "url", "fichier texte", "lien web"
+- Ne pas remplir les lignes
+
+2. Créer un tableau en HTML avec les caractéristiques suivantes :
+Ce tableau retrace tes 5 destinations de rêve.
+- 3 colonnes
+- 6 lignes
+- Intitulé des 3 colonnes : "pays", "région", "avis"
+- Remplir les lignes avec les destinations.
+
+3. Recopier le tableau précédent et ajouter des bordures à ce dernier
+
+4. Recopier le tableau précédent et colorier les cellules en bleu
+
+(on pourra s'aider de recherche web)
+
+
+II. Manipulation des variables en shell
+
+
+1. Ecrire un script qui définit 3 variables dont un nombre à virgule, un entier, une chaine de caractère
+Le script affiche en suite ces 3 variables
+
+2. Créer un script qui définit une variable A initialisée à 0 et qui incrémente cette variables 3 fois.
+
+3. Créer un script qui définit 3 variables A;B;C et qui affiche la concaténation des trois variables
+
+
+III. Usage basique de shell
+
+1. Écrire un script qui demande à l'utilisateur de saisir une note et qui affiche un message en fonction de cette note :
+"très bien" si la note est entre 16 et 20
+"bien" lorsqu'elle est entre 14 et 16
+"assez bien" si la note est entre 12 et 14
+"moyen" si la note est entre 10 et 12
+"insuffisant" si la note est inférieur à 10
+(source: OC)
+
+IV. Boucles
+
+1. Ecrire un script qui affiche les nombres de 1 à 100.000
+2. Ecrire un script qui affiche les nombres pairs de 2 à 200
+3. Ecrire un script qui demande à l'utilisateur de saisir un nombre et qui décrémente ce nombre (et l'affiche) tant que ce dernier
+est strictement positif
+3. Ecrire un script qui demande à l'utilisateur de saisir un nombre et qui incrémente ce nombre (et l'affiche) jusqu'à ce que ce dernier
+soit supérieur à 100.000
