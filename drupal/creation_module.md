@@ -29,9 +29,11 @@ Il faut se rendre à l'adresse : `http://localhost:8888/drupal-8.2.3/admin/modul
 ## Dossier des controleurs
 
 
-Les contrôleurs sont dans le dossier `src/controllers/`.
+Les contrôleurs sont dans le dossier `src/Controller/`.
 
 ## Création d'un controleur
+
+Créer un fichier `HelloController.php` dans le dossier `src/Controller/`.
 
 ```
 <?php
