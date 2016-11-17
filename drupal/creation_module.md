@@ -48,10 +48,10 @@ use Drupal\Core\Controller\ControllerBase;
 
 class HelloController extends ControllerBase {
   public function content() {
-    return array(
-        '#type' => 'markup',
-        '#markup' => $this->t('Hello, World!'),
+    $element = array(
+      '#markup' => '<h1> yoyoyo</h1> <script',
     );
+    return $element;
   }
 }
 ```
@@ -66,12 +66,11 @@ Ce fichier se place dans le dossier : `modules/hello_world`. il se nomme `hello_
 Ex :
 ```
 hello_world.content:
-  path: '/hello'
+  path: '/hello_world'
   defaults:
     _controller: '\Drupal\hello_world\Controller\HelloController::content'
     _title: 'Hello World'
   requirements:
     _permission: 'access content'
-
 ```
 `path`: définit l'url , `_controller`: le controleur déclenché.
