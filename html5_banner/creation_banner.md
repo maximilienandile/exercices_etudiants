@@ -81,3 +81,10 @@ Afin d'avoir une bannière responsive il faut cocher la case `mise en page respo
 ![Timeline](timeline.tiff)
 
 Il faut ajouter simplement les vues les unes après les autres et penser à régler les transitions
+
+## Utilisation de canva.com
+
+Le site canva.com permet une mise en forme rapide de bannières publicitaires et de formats types de posts pour les réseaux sociaux :
+https://www.canva.com
+
+La production est très rapide et fonctionnelle.
