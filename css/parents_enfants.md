@@ -73,3 +73,45 @@ ul + p {
 ```
 
 Ici les propriétés css seront appliquées aux premières balises `p` situées à l'intérieur des balises `ul`
+
+## Sélectionner les enfants directs
+
+```css
+div#alfred > p {
+}
+```
+
+Ici les propriétés css seront appliquées aux enfants directs (de type `p`) de la div d'id `alfred`
+
+## Sélectionner les éléments suiveurs
+
+```css
+ul ~ p {
+
+}
+```
+Ici les propriétés css seront appliquées seulement aux balises `p` qui suivent un `ul`.
+
+NB : peu utilisé.
+
+
+## Sélectionner seulement les éléments qui ont une propriété donnée
+
+
+``` css
+a[title] {
+ color: green;
+}
+```
+Ici les propriétés css seront appliquées seulement aux balises `a` qui ont la propriété title.
+
+
+## Sélectionner seulement les éléments qui ont une propriété donnée qui vaut une certaine valeur
+
+``` css
+a[href="http://google.com"] {
+
+}
+```
+
+Ici les propriétés css seront appliquées seulement aux balises `a` qui ont la propriété `href` valant `http://google.com`.
