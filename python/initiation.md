@@ -27,7 +27,7 @@ print(len(v))
 if a<7 :
   print("yo")
 else :
-  print("no")
+  print("no")[]
 ```
 
 ## Les boucles
@@ -92,6 +92,21 @@ l=[]
 l2=[1,2,3]
 
 ```
+
+### Affichage des éléments d'une liste unie par un join
+
+```python
+
+l2=["rr","yoo","tpr"]
+"-".join(l2)
+
+```
+
+### Utilisation de `range`
+
+`range(0,10)` permet d'itérer de 0 à 9.
+Attention la dernière valeur n'est pas prise en compte !
+
 ## Complexité des algorithmes
 
 ### Par le calcul
