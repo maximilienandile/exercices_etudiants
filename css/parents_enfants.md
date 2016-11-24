@@ -22,8 +22,6 @@ Ici les propriétés css seront appliquées aux balises `a` qui sont dans la cla
 ```
 
 
-
-
 ```css
 ul .ma_classe {
 
