@@ -188,7 +188,7 @@ Ici 2 sera préselectionné.
 On va avoir un bouton d'envoi avec le texte `OK`.
 
 
-## CSS : mise en forme du formulaire
+## Mise en forme du formulaire
 
 ```HTML
 <form method="get" action="traitement.php">
@@ -202,3 +202,21 @@ On va avoir un bouton d'envoi avec le texte `OK`.
 ```
 
 On rajoute des `class`et des `id` sur les éléments et on définit la mise en forme en css.
+
+
+### Rajouter des étiquettes devant les champs du formulaire : `label`
+
+
+On utilise la balise `label`. On précise pour quel champ est l'étiquette via la propriété `for`qui va reprendre en valeur l'`id` du champ en question.
+
+```HTML
+<form method="get" action="traitement.php">
+
+  <label for="bio">Biographie:</label>
+  <textarea name="biographie" id="bio" rows="3" class="yo2"></textarea>
+
+
+  <label for="exp">Expérience Pro:</label>
+  <textarea name="biographie" id="exp" rows="3" class="yo2"></textarea>
+</form>
+```
