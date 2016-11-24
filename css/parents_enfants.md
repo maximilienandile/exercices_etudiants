@@ -21,7 +21,6 @@ Ici les propriétés css seront appliquées aux balises `a` qui sont dans la cla
 }
 ```
 
-Ici les propriétés css seront appliquées aux balises `li` qui sont dans la classe `ma_classe`
 
 
 
