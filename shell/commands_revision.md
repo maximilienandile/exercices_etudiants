@@ -32,8 +32,9 @@ ls /Users/maximilienandile
 
 Exemple 2 : Lister les éléments d'un dossier qui correspondent à une expression régulière
 
-``bash
+```bash
 ls -a /Users/maximilienandile | grep '^[pryoos]'
+
 ```
 
 
