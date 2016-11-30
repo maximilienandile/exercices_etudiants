@@ -1,5 +1,20 @@
 # Rappel : Angular
 
+
+## Set up d'un projet;
+
+Bower est un utilitaire qui s'execute depuis le terminal.
+C'est un gestionnaire de dépendance. Il permet d'installer des frameworks (feuille css, feuille js....) directement depuis le terminal. Dans les faits il va créer un dossier `bower_components` dans lequel il va télécharger automatiquement (il faudra lui dire via le terminal).
+
+```bash
+# Permet d'initialiser BOWER
+bower init
+# Installer bootstrap
+bower install bootstrap
+# installer
+bower install angular
+```
+
 ## La structure de base d'un projet Angular
 
 ```html
