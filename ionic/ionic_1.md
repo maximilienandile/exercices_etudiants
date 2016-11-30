@@ -26,6 +26,20 @@ yo m-ionic:pair home main
 ## Templating ionic
 
 
+### La vue de base
+
+```html
+<ion-view view-title="main debug">
+  <!-- do you want padding? -->
+  <ion-content class="padding">
+
+    
+
+  </ion-content>
+</ion-view>
+```
+
+
 ### Les composants ionic
 
 Tous les composants sont listés ici : http://ionicframework.com/docs/components/
@@ -56,7 +70,9 @@ Chaque ligne est une div de class `row`
 ### Colonnes
 
 Chaque colonne est une div de class `col-X`. X représentant le **pourcentage de la taille de l'écran en largeur**
-Chaque colonne est dans une div de classe `row`
+Chaque colonne est dans une div de classe `row`.
+
+X peut être un chiffre
 
 ```html
 <!-- PREMIERE LGNE -->
@@ -79,3 +95,5 @@ Chaque colonne est dans une div de classe `row`
 </div>
 
 ```
+
+Pour centrer une div, on peut utiliser cette astuce : http://stackoverflow.com/questions/31050832/ionic-how-to-center-a-div.
