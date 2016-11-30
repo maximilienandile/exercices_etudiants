@@ -65,6 +65,9 @@ phonecatApp.controller('PhoneListController', function PhoneListController($scop
 
 ```
 
+Un contrôleur c'est une série de ligne de codes qui va gérer la logique et la données du template.
+Dans le controller je vais définir les variables à transmettre au template.
+
 ## Template
 
 ```javascript
@@ -88,5 +91,25 @@ phonecatApp.controller('PhoneListController', function PhoneListController($scop
 
 ```
 
+On appplique à une balise un contrôleur grâce à la directive (`ng-controller`).
+On applique ici le contrôleur `PhoneListController` à la balise body.
 
-`ng-repeat="phone in phones"` est une directive permettant la répétition d'éléments
+Du coup dans la balise body , j'ai accès à toutes les données définie dans le contrôleur.
+
+
+`ng-repeat="phone in phones"` est une directive permettant d'itérer sur un tableau de données.
+
+
+```html
+<li ng-repeat="phone in phones">
+  <span>{{phone.name}}</span>
+  <p>{{phone.snippet}}</p>
+</li>
+```
+Ce morceau de code lorsqu'il va être interprété par angular va générer autant de balises `li` qu'il y a d'éléments dans la variables `phones`. Cette donnée a été définit dans le contrôleur. (donc on y a bien accès)
+
+```html
+
+<li
+
+```
