@@ -40,7 +40,7 @@ On va devoir imbriquer les balises les unes dans les autres. Par exemple on veut
 On peut rajouter dans nos balises HTML des `propriétés`. Par exemple lorsqu'on crée un lien il faut bien préciser la page de destination du lien.
 
 ```html
-<a href='http://www.google.fr'> Aller sur google</a>
+<a href="http://www.google.fr" class="test" id="yoooooooo"> Aller sur google</a>
 ```
 Ici on a rajouté la propriété `href` dont la valeur est égale à `http://www.google.fr`
 
@@ -71,6 +71,7 @@ Pour faire du HTML, il faut créer un fichier avec l'extension `.html` et dans c
 
   <head>
     <title>Titre dans l'onglet</title>
+    <meta charset="utf-8"/>
   </head>
 
   <body>
@@ -83,3 +84,93 @@ Pour faire du HTML, il faut créer un fichier avec l'extension `.html` et dans c
 ### head
 
 C'est la tête pensante de notre page. On y précise le titre de la page (ce qui apparait dans Google, et sur l'onglet - mais pas dans le contenu de la page)
+
+### body
+
+C'est le corps de la page. Tous les éléments (balises) que l'on met dans body vous apparaitre dans la page.
+
+
+## Les éléments de base
+
+### Les listes
+
+#### Les listes à puce
+
+```html
+<ul>
+  <li> element 1 de ma liste </li>
+  <li> element 2 de ma liste </li>
+  <li> element 3 de ma liste </li>
+</ul>
+
+```
+
+### Les listes numérotées
+
+```html
+<ol>
+  <li> element 1 de ma liste </li>
+  <li> element 2 de ma liste </li>
+  <li> element 3 de ma liste </li>
+</ol>
+
+```
+
+### Les images
+
+#### Les images hébergées dans le dossier de travail
+
+```html
+<img src="image_1.png"/>
+
+```
+```html
+<img src="image_1.png" width="100%"/>
+
+```
+Si l'image est placée dans un dossier (p.ex le dossier `img`) on doit préciser la valeur de la propriété `src` de la manière suivante :
+
+```html
+<img src="img/image_1.png"/>
+
+```
+`img/image_1.png` est appelé le chemin du fichier.
+
+#### Les images hébergées sur le web
+
+```html
+<img src="http://www.google.fr/image_1.png"/>
+
+```
+
+### Italique et gras
+
+
+####Italique
+
+```html
+<em> Texte en italique </em>
+
+```
+
+#### gras
+
+```html
+<strong> Texte en italique </strong>
+```
+###
+
+
+### Les liens
+
+#### Les liens vers une page html interne au site
+
+```html
+<a href="page1.html"> Aller sur la page 1 de mon site</a>
+```
+
+#### Les liens externes`
+
+```html
+<a href="http://www.gogole.fr"> Aller sur la page 1 de mon site</a>
+```
