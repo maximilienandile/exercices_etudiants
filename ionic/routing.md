@@ -1,5 +1,6 @@
 # Routing avec Ionic
 
+Il faut modifier le fichier `main.js`
 
 ```javascript
 var example = angular.module('starter', ['ionic'])
@@ -28,4 +29,16 @@ var example = angular.module('starter', ['ionic'])
         $urlRouterProvider.otherwise('/users');
     });
 
+```
+
+## Pour rajouter une route
+
+Il faut ajouter un `.state`
+
+```javascript
+.state('route2', {
+    url: "/route2",
+    templateUrl: "templates/route2.html",
+    controller: "Route2Controller as ctrl"
+});
 ```
