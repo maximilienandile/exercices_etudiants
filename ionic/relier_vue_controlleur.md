@@ -9,7 +9,7 @@ Par exemple si on veut déclencher une action (ex: sauvegarde d'une donnée) au 
 
 ```html
 <!-- Dans la vue -->
-<button ion-button color="secondary" ng-click="execute_save()">Secondary</button>
+<button ion-button color="secondary" ng-click="ctrl.execute_save()">Secondary</button>
 ```
 
 Lorsqu'on clique sur le boute la fonction `execute_save` dans le contrôleur est lancée.
@@ -19,7 +19,7 @@ Lorsqu'on clique sur le boute la fonction `execute_save` dans le contrôleur est
 On va définir la fonction `execute_save`
 ```javascript
 
-$scope.execute_save=function(){
+this.execute_save=function(){
   // Faire les actions de la fonction
 }
 

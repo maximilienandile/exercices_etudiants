@@ -14,8 +14,14 @@ Le principe de base :
 
 Par exemple :
 - Une table `étudiant` colonnes : nom, prenom, email ...
-- Une table pour les `cours` : inititulé du cours, id du professeur, niveau ....
+- Une table pour les `cours` : inititulé du cours, niveau ....
 - Une table `prof` : email, téléphone, adresse
+
+## Clé étrangère et primaire
+
+Dans une table il y a toujours une `clé primaire` c'est en général la colonne qu'on appelle `id`. C'est une clé qui permet d'identifier un enregistrement de manière.
+
+On peut faire référence dans une table à une autre table via une `clé étrangère`. Par exemple dans ma table `cours`je vais avoir une colonne inititulée `id_prof`  qui fera référence à la clé primaire de la table `prof`.
 
 ## Les principales requêtes.
 
@@ -28,7 +34,7 @@ Comment accéder à l'interface d'administration `phpmyadmin`
 
 ### Création d'une base de données
 
-Attention : jamais de majuscule, ni d'accents , ni d'espaces !
+Attention : jamais de majuscule, ni d'accents , ni d'espaces (on remplace les espaces par des uderscores : `_`)!
 
 A la place des espaces il faut mettre des `_` (snake)
 
@@ -57,6 +63,16 @@ CREATE TABLE `lamia`.`teacher`
 engine = innodb;
 ```
 
+
+### Comment choisir les types des colonnes
+
+Il faut juste savoir ce qu'elles vont contenir.
+
+- Entiers : `INT(11)`
+- Caractères / texte court : `VARCHAR(255)`
+- Texte long : `TEXT`
+- DATE/heure : `TIMESTAMP`
+
 ### Insertion de données
 
 ```sql
@@ -72,6 +88,10 @@ Cette requête va insérer Jean Dupont dans notre table des `teacher`s
 
 
 ### Sélectionner les données
+
+
+### Requête type
+
 
 ```sql
 SELECT colonne1, colonne2 FROM nom_de_la_table WHERE colonne1 LIKE "DDHDKHFHFFKJS"
@@ -135,3 +155,30 @@ DELETE FROM nom_de_la_table WHERE colonne = 1
 ```sql
 DELETE FROM `lamia`.`teacher` WHERE `teacher`.`id` = 1
 ```
+
+### Jointure de deux tables
+
+On veut pouvoir afficher les informations de deux tables lorsque dans la première table il y a une `clé étrangère` vers la deuxième table.
+
+Par exemple :
+- Première table : `chercheurs`
+- Deuxième table : `sujet`
+
+Dans `chercheurs`j'ai une colonne `id_sujet` qui contient une clé étrangère vers la table `sujet`.
+
+
+```sql
+SELECT * FROM chercheurs JOIN sujet ON sujet.id = chercheurs.id_sujet
+```
+Ici on affiche le contenu des deux tables.
+
+
+Si on veut juste certaines colonnes :
+
+```sql
+SELECT sujet.denomination, chercheurs.nom FROM chercheurs JOIN sujet ON sujet.id = chercheurs.id_sujet
+```
+
+Ici on va afficher :
+- La colonne `denomination` de la table `sujet`
+- La colonne `nom` de la table `chercheurs`
