@@ -148,12 +148,11 @@ UPDATE lamia.teacher SET surname = 'Jeannot' WHERE id = 1;
 ### Supprimer une ligne ou des lignes
 
 ```sql
-USE nom_de_la_base;
 DELETE FROM nom_de_la_table WHERE colonne = 1
 ```
 
 ```sql
-DELETE FROM `lamia`.`teacher` WHERE `teacher`.`id` = 1
+DELETE FROM lamia.teacher WHERE teacher.id = 1
 ```
 
 ### Jointure de deux tables
