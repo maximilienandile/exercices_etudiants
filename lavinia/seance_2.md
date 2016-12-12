@@ -86,3 +86,31 @@ function ouvrir_le_paiement(){
   console.log("lien cliqué !!!");
 }
 ```
+
+## Rappels JS
+
+### Ecriture d'une fonctions
+
+```js
+function ouvrir_le_paiement(){
+
+}
+```
+
+### Afficher ou masquer un élément html
+
+#### Pour masquer
+```js
+//Si on veut masquer le premier élément de la classe appBanner
+document.getElementsByClassName('appBanner')[0].style.visibility = 'hidden';
+//Si on veut masquer le premier élément d'id appBanner
+document.getElementsById('appBanner')[0].style.visibility = 'hidden';
+```
+
+#### Pour afficher
+```js
+//Si on veut masquer le premier élément de la classe appBanner
+document.getElementsByClassName('appBanner')[0].style.visibility = 'visible';
+//Si on veut masquer le premier élément d'id appBanner
+document.getElementsById('appBanner')[0].style.visibility = 'visible';
+```
