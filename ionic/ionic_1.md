@@ -33,7 +33,7 @@ yo m-ionic:pair home main
   <!-- do you want padding? -->
   <ion-content class="padding">
 
-    
+
 
   </ion-content>
 </ion-view>
