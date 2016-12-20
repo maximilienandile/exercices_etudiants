@@ -182,20 +182,26 @@ for ($i = 1; $i <= 10; $i=$i+2) {
 
 Ce sont des variables comme les autres mais elles s'écrivent toujours ainsi :
 
+```php
 $_XXX
 
+```
 C'est en général des variables de type Array (ou tableau)
 
+```php
 $_GET
 $_POST
 $_SESSION
 $_SERVER
+```
 
 Toutes ces variables sont accessibles d'office dans la page.
-Sauf $_SESSION pour laquelle il faut mettre à chaque fois (en haut de la page ):
+Sauf `$_SESSION` pour laquelle il faut mettre à chaque fois (en haut de la page ):
 session_start();
 
+```php
 echo $_GET["test"];
+```
 
 cela affichera la valeur test contenu dans l'url de la page.
 
@@ -205,14 +211,16 @@ ma_page.php
 Je me rends sur mon navigateur : http://localhost:8888/ma_page.php?test=yo&test2=123
 
 Si dans ma page j'ai
+```php
 
 echo $_GET["test"];
-
+```
 Alors "yo" va s'afficher dans la page
 
 
 On va pouvoir faire autre chose que de l'affichage comme un test :
 
+```php
 
 if($_GET['test2']==1){
 
@@ -221,9 +229,11 @@ if($_GET['test2']==1){
 
 	// les instructions qui seront executées dans le cas contraire.
 }
+```
 
 Il est d'usage de tester l'existence de ces variables avant de les utiliser pour éviter les erreurs fatales.
 
+```php
 if(isset($_GET['test2'])){
 
 	echo $_GET['test2'];
@@ -231,6 +241,7 @@ if(isset($_GET['test2'])){
 
 
 }
+```
 # Conseils
 
 1. Eviter la panique, un script est idiot, bcp plus idiot que vous
