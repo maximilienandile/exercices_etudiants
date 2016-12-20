@@ -93,7 +93,7 @@ Règles :
 // ON note que chaque variable commence par un $
 ```
 
-5. Manipulation du echo
+- Manipulation du echo
 
 echo est une fonction qui provient du coeur de PHP.
 Elle permet d'afficher des informations à l'écran.
@@ -117,6 +117,7 @@ echo 'ce que l\'on veut ';
 
 Autre point super important : l'incorporation de variables dans les chaines de caractère.
 
+```php
 $nom = "Melissa";
 echo "Bonjour ".$nom." comment vas tu ";
 // affichera : Bonjour Melissa comment vas tu
@@ -127,8 +128,9 @@ echo "Bonjour ".$nom." comment vas tu ";
 $nom = "Melissa";
 echo 'Bonjour '.$nom.' comment vas tu ';
 // affichera : Bonjour Melissa comment vas tu
+```
 
-4. On a les structures de code conditionnelles suivantes :
+## On a les structures de code conditionnelles suivantes :
 
 a- Condition simple  SI qqc est VRAI ALORS faire qqc.
 
@@ -154,7 +156,7 @@ if($a==1){
 ```
 
 
-b- Les itérations ou les boucles
+## Les itérations ou les boucles
 
 ```php
 <?php
@@ -165,7 +167,7 @@ for ($i = 1; $i <= 10; $i++) {
 ```
 - Une boucle pars toujours d'une variable compteur en générale appelée $i qui va être incrémentée (on ajoute 1 à chaque fois) jusqu'à ce qu'une condition soit vérifiée. Ici la condition qui doit être vérifiée est : $i <= 10.
 
-La vériante de la boucle pour décrémenter :
+La variante de la boucle pour décrémenter :
 
 ```php
 <?php
