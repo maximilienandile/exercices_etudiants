@@ -91,13 +91,16 @@ Règles :
 -> $a = 3
 // ici on affecte la valeur trois à la variable $a
 // ON note que chaque variable commence par un $
+```
 
 5. Manipulation du echo
 
 echo est une fonction qui provient du coeur de PHP.
 Elle permet d'afficher des informations à l'écran.
 
+```php
 echo "ce que l'on veut ";
+```
 
 - On peut afficher une chaine de caractère
 - On délimite notre chaine de caractère par des guillemets.
