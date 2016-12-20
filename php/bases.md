@@ -66,16 +66,33 @@ echo "Hello";
 
 ?>
 ```
+On peut aussi avoir cette notation
+
+```php
+<?
+
+echo "Hello";
+
+ ?>
+```
+Ou encore :
+
+```php
+<?= "Hello world"  ?>
+
+```
 Règles :
+
 1. On mets le script à l'intérieur de <?php et ?>
 2. Une instruction par ligne (pour la lisibilité)
 3. Chaque instruction est terminée par un ;
-3bis : On déclare une variable de la manière suivante :
+4. On déclare une variable de la manière suivante :
+```php
 -> $a = 3
 // ici on affecte la valeur trois à la variable $a
 // ON note que chaque variable commence par un $
 
-3ter : manipulation du echo
+5. Manipulation du echo
 
 echo est une fonction qui provient du coeur de PHP.
 Elle permet d'afficher des informations à l'écran.
@@ -90,8 +107,10 @@ echo "ce que l'on veut ";
 - On peut toutefois le faire mais il faut échapper cette guillemet.
 
 ex :
-
+```php
 echo 'ce que l\'on veut ';
+
+```
 
 Autre point super important : l'incorporation de variables dans les chaines de caractère.
 
