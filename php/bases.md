@@ -166,17 +166,9 @@ for ($i = 1; $i <= 10; $i++) {
 ?>
 ```
 - Une boucle pars toujours d'une variable compteur en générale appelée $i qui va être incrémentée (on ajoute 1 à chaque fois) jusqu'à ce qu'une condition soit vérifiée. Ici la condition qui doit être vérifiée est : $i <= 10.
+- On va répéter 10 fois les instructions entre les crochets.
 
-La variante de la boucle pour décrémenter :
-
-```php
-<?php
-for ($i = 1; $i <= 10; $i=$i-1) {
-    echo $i;
-}
-?>
-```
-
+Voici une variante :
 ```php
 <?php
 for ($i = 1; $i <= 10; $i=$i+2) {
@@ -185,7 +177,6 @@ for ($i = 1; $i <= 10; $i=$i+2) {
 ?>
 ```
 
-- On va répéter 10 fois les instructions entre les crochets.
 
 # Les super variables (ou les variables glogales)
 
