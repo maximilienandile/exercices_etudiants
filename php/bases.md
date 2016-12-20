@@ -199,9 +199,26 @@ Toutes ces variables sont accessibles d'office dans la page.
 Sauf `$_SESSION` pour laquelle il faut mettre à chaque fois (en haut de la page ):
 session_start();
 
+## Les variables en GET
+
+Si on va sur cette page :
+
+http://site.com/page.php?test=123&test2=124
+
 ```php
+// fichier page.php
 echo $_GET["test"];
+echo "</br>";
+echo $_GET["test2"];
 ```
+
+Cela affichera :
+
+```html
+123
+124
+```
+
 
 cela affichera la valeur test contenu dans l'url de la page.
 
