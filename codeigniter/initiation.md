@@ -121,16 +121,16 @@ Par exemple une vue type :
 <html>
   <head>
 
-    <link rel="stylesheet" href="<?php base_url('assets/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
 
 
   </head>
 
   <body>
     <h1> Materiel </h1>
-    <img src="<?php base_url('assets/img/toto.png') ?>">
+    <img src="<?php echo base_url('assets/img/toto.png') ?>">
 
-    <a href="<?php base_url('auth/signup') ?>">Signup</a>
+    <a href="<?php echo base_url('auth/signup') ?>">Signup</a>
 
   </body>
 </html>

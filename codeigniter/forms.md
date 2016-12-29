@@ -2,7 +2,7 @@
 
 
 ```html
-<form action="<?php base_url('auth/login_treatment'); ?>" method="post">
+<form action="<?php echo base_url('auth/login_treatment'); ?>" method="post">
     <input type="text" name="champ1">
     <input type="submit" value="OK">
 </form>
