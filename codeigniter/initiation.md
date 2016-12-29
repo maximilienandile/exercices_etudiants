@@ -136,3 +136,15 @@ Par exemple une vue type :
 </html>
 
 ```
+
+## Charger une vue dans le contrôleur
+
+
+```php
+
+public function login(){
+
+  $this->load->view('auth/login');
+}
+
+```
